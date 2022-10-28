@@ -29,19 +29,31 @@ describe(DNote::Notes) do
     end
   end
 
-  describe("#match_general") do
-    it("works") do
+  describe "#match_general" do
+    it "matches a line with any label" do
       notes = described_class.new([])
       rec = notes.match_general(line, lineno, file)
       expect(rec.to_h).to eq todo_hash
     end
+
+    it "does not match a line without a label" do
+      notes = described_class.new([])
+      rec = notes.match_general("# Just a comment", lineno, file)
+      expect(rec.to_h).to eq({})
+    end
   end
 
-  describe("#match_special") do
-    it("works") do
-      notes = described_class.new([], labels: ["TODO"])
+  describe "#match_special" do
+    it "matches a line with any of the given labels" do
+      notes = described_class.new([], labels: %w[TODO FIXME])
       rec = notes.match_special(line, lineno, file)
       expect(rec.to_h).to eq todo_hash
+    end
+
+    it "does not match a line with a label that is not listed" do
+      notes = described_class.new([], labels: %w[FIXME HACK])
+      rec = notes.match_special(line, lineno, file)
+      expect(rec.to_h).to eq({})
     end
   end
 end
