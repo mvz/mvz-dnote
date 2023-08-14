@@ -13,8 +13,8 @@ describe(DNote::Format) do
 
   describe "#render" do
     before do
-      allow(notes).to receive(:by_label).and_return "TODO" => [note]
-      allow(notes).to receive(:counts).and_return "TODO" => 1
+      allow(notes).to receive_messages(by_label: {"TODO" => [note]},
+                                       counts: {"TODO" => 1})
     end
 
     it "renders the note text" do
