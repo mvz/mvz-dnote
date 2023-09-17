@@ -107,6 +107,6 @@ Style/SymbolArray:
 # Project-specific configuration goes here.
 
 # DNote namespace is mapped to dnote directory, both in lib and spec.
-RSpec/FilePath:
+RSpec/SpecFilePathFormat:
   CustomTransform:
     DNote: dnote
