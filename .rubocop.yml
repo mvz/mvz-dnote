@@ -106,6 +106,10 @@ Style/SymbolArray:
 
 # Project-specific configuration goes here.
 
+# Disabled because RSpec/SpecFilePathFormat is automatically enabled as a new cop
+RSpec/FilePath:
+  Enabled: false
+
 # DNote namespace is mapped to dnote directory, both in lib and spec.
 RSpec/SpecFilePathFormat:
   CustomTransform:
