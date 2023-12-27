@@ -74,7 +74,7 @@ module DNote
     def initialize(options = {})
       options ||= {}
       initialize_defaults
-      options.each { |k, v| __send__("#{k}=", v) }
+      options.each { |k, v| __send__(:"#{k}=", v) }
       yield(self) if block_given?
     end
 
