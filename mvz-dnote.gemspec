@@ -30,6 +30,8 @@ Gem::Specification.new do |spec|
   spec.rdoc_options = ["--main", "README.md"]
   spec.extra_rdoc_files = ["HISTORY.rdoc", "README.md", "COPYING.rdoc"]
 
+  spec.add_dependency "rexml", "~> 3.3"
+
   spec.add_development_dependency "aruba", "~> 2.0"
   spec.add_development_dependency "cucumber", "~> 9.0"
   spec.add_development_dependency "pry", "~> 0.14.0"
