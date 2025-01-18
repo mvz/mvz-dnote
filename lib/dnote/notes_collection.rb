@@ -29,8 +29,8 @@ module DNote
     end
 
     # Iterate through notes.
-    def each(&block)
-      notes.each(&block)
+    def each(&)
+      notes.each(&)
     end
 
     # No notes?
