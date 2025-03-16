@@ -71,8 +71,7 @@ module DNote
     private
 
     # New Session.
-    def initialize(options = {})
-      options ||= {}
+    def initialize(**options)
       initialize_defaults
       options.each { |k, v| __send__(:"#{k}=", v) }
       yield(self) if block_given?
@@ -87,6 +86,7 @@ module DNote
       @format = DEFAULT_FORMAT
       @title = DEFAULT_TITLE
       @dryrun = false
+      @colon = true
       @marker = nil
       @url = nil
       @context = 0

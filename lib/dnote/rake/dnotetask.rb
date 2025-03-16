@@ -102,7 +102,7 @@ module DNote
 
     def clean_format(format)
       if format == "index"
-        file = "#{output}index.html".to_s
+        file = "#{output}index.html"
       else
         ext = ::DNote::Format::EXTENSIONS[format] || format
         file = (output + "notes.#{ext}").to_s
