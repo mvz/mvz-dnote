@@ -87,6 +87,7 @@ module DNote
       @format = DEFAULT_FORMAT
       @title = DEFAULT_TITLE
       @dryrun = false
+      @colon = true
       @marker = nil
       @url = nil
       @context = 0

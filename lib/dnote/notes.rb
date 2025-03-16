@@ -44,13 +44,14 @@ module DNote
     attr_reader :context
 
     # New set of notes for give +files+ and optional special labels.
-    def initialize(files, options = {})
-      @files = [files].flatten
-      @labels = [options[:labels] || DEFAULT_LABELS].flatten.compact
-      @colon = options[:colon].nil? ? true : options[:colon]
-      @marker = options[:marker]
-      @url = options[:url]
-      @context = options[:context] || 0
+    def initialize(files, marker: nil, url: nil, labels: DEFAULT_LABELS,
+                   colon: true, context: 0)
+      @files = files
+      @labels = labels
+      @colon = colon
+      @marker = marker
+      @url = url
+      @context = context
       @remark = {}
 
       parse
