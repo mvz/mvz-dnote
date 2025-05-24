@@ -1,5 +1,11 @@
 = RELEASE HISTORY
 
+== 1.11.0 / 2025-05-24
+
+* Support Ruby 3.1 through 3.4, dropping support for older Rubies
+* Add rexml dependency
+* Update development dependencies
+
 == 1.10.0 / 2022-04-10
 
 * Add support for Ruby 3.1
