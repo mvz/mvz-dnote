@@ -77,13 +77,13 @@ module DNote
     end
 
     # Convert to JSON.
-    def to_json(*args)
-      to_h_raw.to_json(*args)
+    def to_json(*)
+      to_h_raw.to_json(*)
     end
 
     # Convert to YAML.
-    def to_yaml(*args)
-      to_h_raw.to_yaml(*args)
+    def to_yaml(*)
+      to_h_raw.to_yaml(*)
     end
 
     # Return line URL based on URL template. If no template was set, then
