@@ -1,5 +1,10 @@
 = RELEASE HISTORY
 
+== 1.12.0 / 2026-09-25
+
+* Support Ruby 3.3 through 4.0, dropping support for older Rubies
+* Update development dependencies
+
 == 1.11.0 / 2025-05-24
 
 * Support Ruby 3.1 through 3.4, dropping support for older Rubies
