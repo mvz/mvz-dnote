@@ -32,15 +32,4 @@ Gem::Specification.new do |spec|
   spec.extra_rdoc_files = ["HISTORY.rdoc", "README.md", "COPYING.rdoc"]
 
   spec.add_dependency "rexml", "~> 3.3"
-
-  spec.add_development_dependency "aruba", "~> 2.3"
-  spec.add_development_dependency "cucumber", "~> 11.0"
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rake-manifest", "~> 0.2.0"
-  spec.add_development_dependency "rspec", "~> 3.5"
-  spec.add_development_dependency "rubocop", "~> 1.74"
-  spec.add_development_dependency "rubocop-packaging", "~> 0.6.0"
-  spec.add_development_dependency "rubocop-performance", "~> 1.24"
-  spec.add_development_dependency "rubocop-rspec", "~> 3.5"
-  spec.add_development_dependency "simplecov", "~> 1.3.0"
 end
