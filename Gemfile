@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 group :development, :test do
-  gem "aruba", "~> 2.3"
-  gem "cucumber", "~> 11.0"
+  gem "aruba", "~> 3.0"
+  gem "cucumber", "~> 12.0"
   gem "rake", "~> 13.0"
   gem "rake-manifest", "~> 0.2.0"
   gem "rspec", "~> 3.5"
